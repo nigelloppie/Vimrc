@@ -1,6 +1,10 @@
 
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("n", "<C-z>", "<cmd>undo<cr>")
+vim.keymap.set("n", "<C-y>", "<C-r>")
+vim.keymap.set("n", "<C-r>", "<Nop>", {noremap = true, silent = true})
+vim.keymap.set("n", "u", "<Nop>", {noremap = true, silent = true})
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
